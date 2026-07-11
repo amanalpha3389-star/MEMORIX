@@ -21,7 +21,7 @@ document.addEventListener("keypress", function () {
 function levelUp() {
     usrSeq = [];
     level++;
-    h2.innerText = `Score ${level}`;
+    h2.innerHTML = `HighScore ${highScr}  <br>  Score ${level}`;
 
     let randoIdx = Math.floor(Math.random() * 9);
     let randoColor = btns[randoIdx];
@@ -45,6 +45,7 @@ function usrFlash(btn) {
 }
 
 function checkAns(idx) {
+    
     if (usrSeq[idx] === gameSeq[idx]) {
         if (usrSeq.length == gameSeq.length) {
             setTimeout(levelUp, 1000);
@@ -56,7 +57,10 @@ function checkAns(idx) {
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function () {
             document.querySelector("body").style.backgroundColor = "#5a1419";
-        }, 500)
+        }, 500);
+        if(highScr<level) {
+            highScr = level;
+        }
         reset();
     }
 }
