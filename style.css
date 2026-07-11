@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    background-color: #5a1419;
+}
+
+h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    color: rgb(153, 237, 29);
+    margin: 2rem;
+}
+
+h2 {
+    font-family: "Bitcount Grid Double", system-ui;
+    color: rgb(232, 182, 45);
+    font-size: 3rem;
+}
+
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+    border: 10px solid #D97757;
+    margin: 2rem;
+    display: flex;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.one {
+    background-color: #8A4F7D;
+}
+
+.two {
+    background-color: #6C8EAD;
+}
+
+.three {
+    background-color: #B26A5E;
+}
+
+.four {
+    background-color: #8DAA91;
+}
+
+.five {
+    background-color: #D9B26F;
+}
+
+.six {
+    background-color: #9B7EDE;
+}
+
+.seven {
+    background-color: #C98C5A;
+}
+
+.eight {
+    background-color: #76946A;
+}
+
+.nine {
+    background-color: #D18B8B;
+}
+
+
+.flash {
+    /* background-color: white; */
+    box-shadow: 0 0 30px rgb(233, 98, 98);
+}
+
+.usrflash {
+    /* background-color: aquamarine; */
+    box-shadow: 0 0 30px rgb(236, 147, 147);
+}
+
